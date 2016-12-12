@@ -1,0 +1,14 @@
+<section>
+  <h1>Some post</h1>
+
+
+  <post *ngFor="let post of postList" [post]=post></post>
+  <br>
+  <br>
+  <br>
+  <div>
+    <span>page:</span>
+    <a *ngFor="let page of pages;" routerLink="/archive/{{page}}" (click)="goPage(page)">{{page}}  </a>
+  </div>
+
+</section>
